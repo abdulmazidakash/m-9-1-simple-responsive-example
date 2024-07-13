@@ -171,19 +171,37 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 
 /* responsive media query  */
 
-.hide{
+/* .hide{
     display: none;
-}
+} */
 
 /* 2nd time media query use practice  */
 
 @media screen and (max-width:576px) {
     .skills-container, 
-    .resume-container, 
+    .resume-container,
+    .banner,
+    nav,
+    nav >ul, 
     footer,
     .about-items
     {
         flex-direction: column;
+    }
+    nav >ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
     }
     footer, .about{
         padding: 0px;
@@ -191,7 +209,9 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     .footer-column{
         width: 100%;
     }
-    footer input[type="text"], footer input[type="email"], footer textarea{
+    footer input[type="text"], 
+    footer input[type="email"], 
+    footer textarea{
         width: calc(100% - 40px);
     }
 }
